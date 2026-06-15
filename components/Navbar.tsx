@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { nav } from "@/lib/site";
+import { nav, ieeeJoinUrl } from "@/lib/site";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -34,7 +34,7 @@ export function Navbar() {
           <img
             src="/emblem.png"
             alt="IEEE IES Rwanda Chapter emblem"
-            className="h-10 w-10 transition-transform duration-700 ease-out group-hover:rotate-90"
+            className="h-10 w-10 animate-spin-rest"
           />
           <div className="leading-none">
             <div className="font-display text-sm font-bold tracking-tight text-ieee-deep">
@@ -68,12 +68,14 @@ export function Navbar() {
             );
           })}
           <li>
-            <Link
-              href="/membership"
+            <a
+              href={ieeeJoinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-2 rounded-full bg-signal px-4 py-2 text-sm font-semibold text-coal transition-all hover:bg-ieee hover:text-white"
             >
               Join →
-            </Link>
+            </a>
           </li>
         </ul>
 

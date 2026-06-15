@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { MagneticButton } from "@/components/MagneticButton";
-import { benefits, tracks, chapter } from "@/lib/site";
+import { benefits, tracks, chapter, ieeeJoinUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Membership — IEEE IES Rwanda Chapter",
@@ -112,7 +112,7 @@ export default function MembershipPage() {
           </RevealGroup>
 
           <Reveal delay={0.1} className="mt-12 flex flex-wrap items-center gap-4">
-            <MagneticButton href="https://www.ieee.org/membership/join">
+            <MagneticButton href={ieeeJoinUrl}>
               Start at ieee.org →
             </MagneticButton>
             <MagneticButton href={`mailto:${chapter.email}`} variant="ghost">

@@ -26,12 +26,16 @@ export function Hero() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-7 inline-flex items-center gap-3 rounded-full border border-paper/15 bg-paper/5 px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.2em] text-paper/70 backdrop-blur-sm"
+          className="mb-7 inline-flex items-stretch divide-x divide-paper/15 overflow-hidden rounded-full border border-paper/15 bg-paper/5 font-mono text-[11px] uppercase tracking-[0.18em] text-paper/70 backdrop-blur-sm"
         >
-          <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-leaf" />
-          {chapter.parentSection}
-          <span className="text-paper/30">·</span>
-          Est. {chapter.established}
+          <span className="flex items-center gap-2 px-4 py-1.5">
+            <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-leaf" />
+            {chapter.section}
+          </span>
+          <span className="hidden items-center px-4 py-1.5 sm:flex">{chapter.region}</span>
+          <span className="flex items-center px-4 py-1.5 font-semibold text-signal">
+            Est. {chapter.established}
+          </span>
         </motion.div>
 
         {/* kinetic headline */}

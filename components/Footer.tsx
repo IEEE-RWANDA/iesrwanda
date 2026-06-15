@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { chapter, nav } from "@/lib/site";
+import { chapter, nav, socials } from "@/lib/site";
+import { SocialIcon } from "./SocialIcon";
 
 export function Footer() {
   return (
@@ -22,6 +23,21 @@ export function Footer() {
               engineers behind Rwanda&apos;s industrial future. Engineered locally, connected
               globally.
             </p>
+            <div className="mt-6 flex items-center gap-3">
+              {socials.map((s) => (
+                <a
+                  key={s.key}
+                  href={s.href}
+                  target={s.href.startsWith("http") ? "_blank" : undefined}
+                  rel="noopener noreferrer"
+                  aria-label={s.name}
+                  title={s.name}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-paper/15 text-paper/70 transition-colors hover:border-signal hover:bg-signal hover:text-coal"
+                >
+                  <SocialIcon name={s.key} className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
           </div>
 
           <div>
@@ -75,8 +91,8 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-paper/10 pt-6 font-mono text-[11px] uppercase tracking-wider text-paper/40 sm:flex-row sm:items-center">
           <span>
-            © {chapter.established}–2026 IEEE IES Rwanda Chapter · Not an official IEEE page —
-            demo content
+            © {chapter.established} IEEE IES Rwanda Chapter · Established {chapter.established},
+            Kigali
           </span>
           <span className="flex items-center gap-2">
             <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-leaf" />

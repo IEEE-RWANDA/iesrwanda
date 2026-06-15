@@ -21,12 +21,14 @@ function StoryCard({
   kicker,
   title,
   body,
+  logo,
 }: {
   index: number;
   total: number;
   kicker: string;
   title: string;
   body: string;
+  logo: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -53,8 +55,9 @@ function StoryCard({
             </h3>
             <p className="mt-5 text-lg leading-relaxed text-paper/70">{body}</p>
           </div>
-          <div className="font-mono text-7xl font-bold text-paper/5 sm:text-9xl">
-            {String(index + 1).padStart(2, "0")}
+          <div className="flex shrink-0 items-center justify-center rounded-2xl bg-white p-5 shadow-sm ring-1 ring-paper/10 sm:p-6">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={logo} alt={`${title} logo`} className="h-14 w-auto sm:h-20" />
           </div>
         </div>
       </motion.div>

@@ -91,7 +91,19 @@ function Timeline({
           {event.title}
         </h3>
         <p className="mt-2 max-w-2xl leading-relaxed text-paper/65">{event.body}</p>
-        <div className="mt-4 font-mono text-xs text-paper/50">↳ {event.place}</div>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+          <div className="font-mono text-xs text-paper/50">↳ {event.place}</div>
+          {live && event.register && (
+            <a
+              href={event.register}
+              target={event.register.startsWith("http") ? "_blank" : undefined}
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full bg-signal px-5 py-2.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
+            >
+              Register →
+            </a>
+          )}
+        </div>
       </article>
     </div>
   );

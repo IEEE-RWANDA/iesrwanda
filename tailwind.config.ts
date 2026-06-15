@@ -51,12 +51,23 @@ const config: Config = {
           "0%, 49%": { opacity: "1" },
           "50%, 100%": { opacity: "0" },
         },
+        // 12s loop. Peak burst = 500 RPM (3000°/s ≈ 8.3 rev/s) then decelerates
+        // to a calm ~6 RPM glide. Front-loaded deltas under LINEAR timing give
+        // the speed profile. Ends on 3600° (10 turns) so the reset is invisible.
+        "spin-rest": {
+          "0%": { transform: "rotate(0deg)" }, // ┐ 0→5% over 0.6s = +1800° = 3000°/s = 500 RPM
+          "5%": { transform: "rotate(1800deg)" }, // ┘ blur — impossible to focus on
+          "12%": { transform: "rotate(2880deg)" }, // decelerating (~214 RPM)
+          "22%": { transform: "rotate(3240deg)" }, // (~50 RPM)
+          "100%": { transform: "rotate(3600deg)" }, // calm glide (~6 RPM), then loop
+        },
       },
       animation: {
         marquee: "marquee 38s linear infinite",
         "marquee-rev": "marquee-rev 38s linear infinite",
         "grid-pan": "grid-pan 8s linear infinite",
         blink: "blink 1.1s step-end infinite",
+        "spin-rest": "spin-rest 12s linear infinite",
       },
     },
   },

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { FaviconSpinner } from "@/components/FaviconSpinner";
 
 export const metadata: Metadata = {
   title: "IEEE IES Rwanda Chapter — Industrial Electronics Society",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen antialiased">
+        <FaviconSpinner />
         <ScrollProgress />
         <Navbar />
         <main>{children}</main>
