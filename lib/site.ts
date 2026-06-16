@@ -59,7 +59,7 @@ export const stats = [
   { value: 10000, suffix: "+", label: "IES members worldwide", note: "the global community you join" },
   { value: 30, suffix: "+", label: "Conferences each year", note: "discounted member access" },
   { value: 160, suffix: "+", label: "Countries reached", note: "IEEE's global footprint" },
-  { value: 250, suffix: "", label: "PowerAfrica delegates", note: "hosted in Kigali, 2022" },
+  { value: 30, suffix: "+", label: "Community members in Rwanda", note: "the founding circle — and growing" },
 ];
 
 // Marquee keywords — the IES field of interest, in its own words
@@ -204,9 +204,9 @@ export const story = [
 // Add a real headshot by dropping the file in /public/officers and setting
 // `photo` to e.g. "/officers/kipngeno.jpg". Leave "" to show the placeholder.
 export const officers = [
-  { name: "Kipngeno Koech", role: "Chapter Chair", affil: "", initials: "KK", photo: "" },
-  { name: "Gentille Uwera", role: "Treasurer", affil: "", initials: "GU", photo: "" },
-  { name: "David Stephen", role: "Secretary", affil: "", initials: "DS", photo: "" },
+  { name: "Kipngeno Koech", role: "Chapter Chair", affil: "", initials: "KK", photo: "/officers/kip.jpg" },
+  { name: "Gentille Uwera", role: "Treasurer", affil: "", initials: "GU", photo: "/officers/gentille.jpg" },
+  { name: "David Stephen", role: "Secretary", affil: "", initials: "DS", photo: "/officers/david.png" },
 ];
 
 // Volunteer sign-up — replace "#" with your Google Form URL when ready.
