@@ -236,6 +236,8 @@ export const socials = [
 ];
 
 // Events — anchored to real IEEE-in-Rwanda activity + plausible chapter events
+// `image`: for UPCOMING events drop an event poster, for PAST events a photo,
+// in /public/events/ and set the path (e.g. "/events/launch-poster.jpg").
 export const events = [
   {
     date: "2026-07-03",
@@ -246,6 +248,7 @@ export const events = [
     body: "The inaugural gathering of the IEEE IES Rwanda Chapter: welcoming members, setting the technical agenda, and marking Rwanda's entry into the global IES community.",
     status: "upcoming",
     register: "#", // paste the registration URL (Google Form, Eventbrite, vTools…)
+    image: "", // event poster → /public/events/launch-poster.jpg
   },
   {
     date: "2026-07-03",
@@ -256,16 +259,18 @@ export const events = [
     body: "A hands-on session on applied industrial AI led by Darryl Palmer, IEEE IES Industrial Activities Committee & IEEE Entrepreneurship Liaison.",
     status: "upcoming",
     register: "#", // paste the registration URL
+    image: "", // event poster
   },
   {
-    date: "2022-08-22",
-    when: "22–27 Aug 2022",
-    title: "IEEE PES/IAS PowerAfrica Conference",
-    place: "Kigali · UR & CMU-Africa",
-    kind: "Conference",
-    body: "The 9th PowerAfrica brought 250 delegates to Kigali — the foundation the chapter builds on.",
+    date: "2026-05-28",
+    when: "28–30 May 2026",
+    title: "IEEE IES East Africa Industrial Innovation Summit 2026",
+    place: "Nairobi, Kenya",
+    kind: "Summit",
+    body: "Under the theme “Collaboration for Africa’s Sustainable Industrial Future,” the East African Hub summit brought together engineers, researchers, students, startups and industry leaders — spanning AI, IoT, robotics and automation to smart energy and sustainable infrastructure — to drive Africa’s industrial transformation.",
     status: "past",
     register: "",
+    image: "", // event photo → /public/events/east-africa-summit-2026.jpg
   },
 ];
 

@@ -3,12 +3,13 @@ import { PageHeader } from "@/components/PageHeader";
 import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { CTA } from "@/components/CTA";
+import { EventMedia } from "@/components/EventMedia";
 import { events } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Events — IEEE IES Rwanda Chapter",
   description:
-    "Workshops, seminars and conferences from the IEEE IES Rwanda Chapter — including IEEE PowerAfrica in Kigali.",
+    "Workshops, seminars and summits from the IEEE IES Rwanda Chapter — including the IES East Africa Industrial Innovation Summit in Nairobi.",
 };
 
 export default function EventsPage() {
@@ -80,29 +81,38 @@ function Timeline({
         )}
       </span>
       <article className="overflow-hidden rounded-2xl border border-paper/10 bg-ink-soft p-7 transition-colors hover:border-signal/40 sm:p-8">
-        <div className="flex flex-wrap items-center gap-3">
-          <span className="font-mono text-sm text-signal">{event.when}</span>
-          <span className="text-paper/20">·</span>
-          <span className="rounded-full border border-paper/15 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-paper/60">
-            {event.kind}
-          </span>
-        </div>
-        <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-          {event.title}
-        </h3>
-        <p className="mt-2 max-w-2xl leading-relaxed text-paper/65">{event.body}</p>
-        <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
-          <div className="font-mono text-xs text-paper/50">↳ {event.place}</div>
-          {live && event.register && (
-            <a
-              href={event.register}
-              target={event.register.startsWith("http") ? "_blank" : undefined}
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full bg-signal px-5 py-2.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
-            >
-              Register →
-            </a>
-          )}
+        <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+          <div>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="font-mono text-sm text-signal">{event.when}</span>
+              <span className="text-paper/20">·</span>
+              <span className="rounded-full border border-paper/15 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-paper/60">
+                {event.kind}
+              </span>
+            </div>
+            <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight sm:text-3xl">
+              {event.title}
+            </h3>
+            <p className="mt-2 leading-relaxed text-paper/65">{event.body}</p>
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+              <div className="font-mono text-xs text-paper/50">↳ {event.place}</div>
+              {live && event.register && (
+                <a
+                  href={event.register}
+                  target={event.register.startsWith("http") ? "_blank" : undefined}
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-signal px-5 py-2.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
+                >
+                  Register →
+                </a>
+              )}
+            </div>
+          </div>
+          <EventMedia
+            image={event.image}
+            variant={live ? "poster" : "photo"}
+            kind={event.kind}
+          />
         </div>
       </article>
     </div>
