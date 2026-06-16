@@ -19,9 +19,8 @@ export function Footer() {
               {chapter.parentSection}
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-paper/60">
-              The Rwanda Chapter of the IEEE Industrial Electronics Society — building the
-              engineers behind Rwanda&apos;s industrial future. Engineered locally, connected
-              globally.
+              The IEEE Industrial Electronics Society Rwanda Chapter, building the engineers
+              behind Rwanda&apos;s industrial future. Engineered locally, connected globally.
             </p>
             <div className="mt-6 flex items-center gap-3">
               {socials.map((s) => (

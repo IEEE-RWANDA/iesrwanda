@@ -18,7 +18,7 @@ export default function LeadershipPage() {
         index="02"
         kicker="The volunteers"
         title="Led by engineers, for engineers."
-        intro="The chapter runs on volunteers — students, academics and industry professionals giving their time to grow industrial electronics in Rwanda. (Names below are placeholders, ready for the real committee.)"
+        intro="The chapter runs on volunteers — students, academics and industry professionals giving their time to grow industrial electronics in Rwanda."
       />
 
       <section className="bg-ink py-20 sm:py-28">

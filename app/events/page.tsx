@@ -28,7 +28,7 @@ export default function EventsPage() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           {/* upcoming */}
           <Reveal className="mb-10">
-            <SectionLabel index="01">Upcoming</SectionLabel>
+            <SectionLabel index="04">Upcoming</SectionLabel>
           </Reveal>
           <div className="relative border-l border-paper/15 pl-6 sm:pl-10">
             <RevealGroup className="space-y-5">
@@ -42,7 +42,7 @@ export default function EventsPage() {
 
           {/* past */}
           <Reveal className="mb-10 mt-20">
-            <SectionLabel index="02">Archive</SectionLabel>
+            <SectionLabel index="05">Archive</SectionLabel>
           </Reveal>
           <div className="relative border-l border-paper/15 pl-6 sm:pl-10">
             <RevealGroup className="space-y-5">

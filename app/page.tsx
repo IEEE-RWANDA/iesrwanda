@@ -65,12 +65,12 @@ export default function HomePage() {
             <div>
               <SectionLabel index="04">Field of interest</SectionLabel>
               <h2 className="mt-5 max-w-2xl font-display text-[clamp(2rem,5vw,3.5rem)] font-bold leading-[1.02] tracking-tightest">
-                Four pillars of industrial electronics.
+                IES areas of technical activity.
               </h2>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-paper/55">
-              The IES applies electronics, control, instrumentation and computational
-              intelligence to real industry. Hover to explore each domain.
+              The IES spans electronics, controls, communications, instrumentation and
+              computational intelligence, applied to real industry. Hover to explore each domain.
             </p>
           </Reveal>
           <Pillars />
@@ -113,7 +113,7 @@ export default function HomePage() {
                     )}
                     {c.students && (
                       <span className="rounded-full border border-ieee/40 px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-ieee">
-                        Students &amp; YP
+                        SYP
                       </span>
                     )}
                   </div>

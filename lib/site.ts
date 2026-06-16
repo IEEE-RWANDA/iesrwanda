@@ -30,19 +30,19 @@ export const rwandaVideoId = "yv-bdsuKhM0";
 export const rwandaHighlights = [
   {
     title: "Land of a Thousand Hills",
-    body: "Rolling green hills, volcanoes and the mountain gorillas of Volcanoes National Park — Rwanda's landscape is unforgettable.",
+    body: "Rolling green hills, volcanoes and the mountain gorillas of Volcanoes National Park make Rwanda's landscape unforgettable.",
   },
   {
     title: "Africa's rising tech hub",
-    body: "Kigali Innovation City, CMU-Africa and a booming startup scene make Rwanda one of the continent's fastest-moving technology centres.",
+    body: "Rwanda has become one of the continent's fastest-moving technology centres, backed by a government that prioritises connectivity, innovation and digital transformation at a national scale.",
   },
   {
     title: "Clean & safe",
-    body: "Kigali is repeatedly named among Africa's cleanest and safest cities — built on Umuganda, the national day of community service.",
+    body: "Kigali is repeatedly named among the world's cleanest and safest cities, shaped by strong civic discipline, community traditions like Umuganda, and a deep national commitment to order and security.",
   },
   {
-    title: "Made in Rwanda",
-    body: "A national drive to industrialise — manufacturing, energy and mobility — exactly the fields where industrial electronics matters most.",
+    title: "Visit Rwanda",
+    body: "Mountain gorillas in Volcanoes National Park, wildlife in Akagera, the ancient rainforest canopy and rare birds of Nyungwe, and the clean, safe streets of Kigali make Rwanda one of Africa's most rewarding places to visit.",
   },
   {
     title: "Heart of the continent",
@@ -50,7 +50,7 @@ export const rwandaHighlights = [
   },
   {
     title: "Warm hospitality",
-    body: "Visitors remember Rwanda for its people — welcoming, ambitious and proud of how far the country has come.",
+    body: "Visitors remember Rwanda for its people: welcoming, ambitious and proud of how far the country has come.",
   },
 ];
 
@@ -80,31 +80,37 @@ export const focusKeywords = [
   "Vision Systems",
 ];
 
-// The technical pillars — drawn from the official IES field of interest
+// IES areas of technical activity — the five domains of the official IES field of interest
 export const pillars = [
   {
     id: "01",
-    title: "Control, Robotics & Mechatronics",
-    body: "Intelligent and computer control systems, motion control, and the robotics that move modern industry. Home of the IES TC-CRM technical committee.",
-    tags: ["TC-CRM", "Motion Control", "Autonomy"],
+    title: "Electronics",
+    body: "Power electronics, motor drives, converters and the electronic systems that drive industrial processes, manufacturing and renewable energy infrastructure.",
+    tags: ["Power Electronics", "Drives", "Converters"],
   },
   {
     id: "02",
-    title: "Power Electronics & Drives",
-    body: "Electric motor drives, converters, and power electronics for renewable energy and resilient power systems — the backbone of African electrification.",
-    tags: ["Drives", "Renewables", "Grid"],
+    title: "Controls",
+    body: "Industrial control systems, motion control, robotics and mechatronics — the intelligence that keeps automated processes precise and adaptive.",
+    tags: ["Motion Control", "Robotics", "Mechatronics"],
   },
   {
     id: "03",
-    title: "Factory Automation & Industry 4.0",
-    body: "Factory communications, flexible manufacturing, and data acquisition that turn raw production into a connected, instrumented system.",
-    tags: ["Automation", "IIoT", "Manufacturing"],
+    title: "Communications",
+    body: "Factory communications and industrial networking that connect sensors, machines and systems into a coherent, data-driven plant.",
+    tags: ["Industrial Networking", "IIoT", "Connectivity"],
   },
   {
     id: "04",
-    title: "Industrial AI & Instrumentation",
-    body: "Computational intelligence, signal processing, vision systems, and fault diagnosis applied to real industrial electronic systems.",
-    tags: ["Industrial AI", "Sensing", "Diagnostics"],
+    title: "Instrumentation",
+    body: "Sensors, actuators and data acquisition systems that measure and monitor industrial processes with precision.",
+    tags: ["Sensors & Actuators", "Data Acquisition", "Monitoring"],
+  },
+  {
+    id: "05",
+    title: "Computational Intelligence",
+    body: "Signal processing, machine learning and computational intelligence applied to fault diagnosis, vision systems and industrial decision-making.",
+    tags: ["Industrial AI", "Vision Systems", "Fault Diagnosis"],
   },
 ];
 
@@ -147,8 +153,8 @@ export const conferences = [
   },
   {
     acronym: "ETFA",
-    name: "Emerging Technologies and Factory Automation",
-    focus: "Factory automation and emerging industrial technologies.",
+    name: "IEEE International Conference on Emerging Technologies and Factory Automation",
+    focus: "ETFA 2026 runs 8–11 September in Västerås, Sweden — factory automation and emerging industrial technologies. Held annually.",
     flagship: false,
     students: false,
     url: "https://etfa2026.ieee-ies.org/",
@@ -162,10 +168,10 @@ export const conferences = [
     url: "https://www.ieee-ies.org/conferences",
   },
   {
-    acronym: "S&YP",
-    name: "Students & Young Professionals",
+    acronym: "SYP",
+    name: "Students and Young Professionals Congress",
     focus:
-      "The IES S&YP community — paper travel assistance, forums and student activities held alongside the flagship conferences every year.",
+      "A standalone annual gathering for IES students and young professionals. SYP Congress 2026 runs 13–15 August in Rio de Janeiro, Brazil. The Paper Assistance Program (SYPA) separately helps SYP members attend the flagship conferences.",
     flagship: false,
     students: true,
     url: "https://www.ieee-ies.org/membership/students",
@@ -194,16 +200,13 @@ export const story = [
   },
 ];
 
-// Leadership — placeholder officers, ready to be replaced with real volunteers.
+// Leadership — the chapter's executive committee.
 // Add a real headshot by dropping the file in /public/officers and setting
-// `photo` to e.g. "/officers/aline.jpg". Leave "" to show the placeholder.
+// `photo` to e.g. "/officers/kipngeno.jpg". Leave "" to show the placeholder.
 export const officers = [
-  { name: "Dr. Aline Uwase", role: "Chapter Chair", affil: "University of Rwanda · CST", initials: "AU", photo: "" },
-  { name: "Jean-Paul Niyonzima", role: "Vice Chair", affil: "Carnegie Mellon University Africa", initials: "JN", photo: "" },
-  { name: "Grace Ingabire", role: "Secretary", affil: "University of Rwanda · ECE", initials: "GI", photo: "" },
-  { name: "Eric Mugisha", role: "Treasurer", affil: "Rwanda Polytechnic", initials: "EM", photo: "" },
-  { name: "Sandrine Mukamana", role: "Student Activities Chair", affil: "University of Rwanda", initials: "SM", photo: "" },
-  { name: "David Habimana", role: "Industry Liaison", affil: "Kigali Special Economic Zone", initials: "DH", photo: "" },
+  { name: "Kipngeno Koech", role: "Chapter Chair", affil: "", initials: "KK", photo: "" },
+  { name: "Gentille Uwera", role: "Treasurer", affil: "", initials: "GU", photo: "" },
+  { name: "David Stephen", role: "Secretary", affil: "", initials: "DS", photo: "" },
 ];
 
 // Volunteer sign-up — replace "#" with your Google Form URL when ready.
@@ -235,34 +238,24 @@ export const socials = [
 // Events — anchored to real IEEE-in-Rwanda activity + plausible chapter events
 export const events = [
   {
-    date: "2026-09-18",
-    when: "18 Sep 2026",
-    title: "Industrial AI & Mechatronics Workshop",
-    place: "University of Rwanda, Kigali",
-    kind: "Workshop",
-    body: "Hands-on sessions on motion control, embedded vision and industrial AI, led by IES volunteers and local industry mentors.",
+    date: "2026-07-03",
+    when: "3 Jul 2026",
+    title: "IEEE IES Rwanda Chapter — Official Launch",
+    place: "Kigali, Rwanda",
+    kind: "Community",
+    body: "The inaugural gathering of the IEEE IES Rwanda Chapter: welcoming members, setting the technical agenda, and marking Rwanda's entry into the global IES community.",
     status: "upcoming",
     register: "#", // paste the registration URL (Google Form, Eventbrite, vTools…)
   },
   {
-    date: "2026-07-22",
-    when: "22 Jul 2026",
-    title: "Power Electronics for Renewable Grids — Seminar",
-    place: "CMU-Africa, Kigali",
-    kind: "Seminar",
-    body: "Converters, drives and grid integration for off-grid and mini-grid systems across the region.",
+    date: "2026-07-03",
+    when: "3 Jul 2026",
+    title: "Industrial AI in Practice — Workshop",
+    place: "Kigali, Rwanda",
+    kind: "Workshop",
+    body: "A hands-on session on applied industrial AI led by Darryl Palmer, IEEE IES Industrial Activities Committee & IEEE Entrepreneurship Liaison.",
     status: "upcoming",
     register: "#", // paste the registration URL
-  },
-  {
-    date: "2026-05-10",
-    when: "10 May 2026",
-    title: "Chapter Kick-off & Member Meet",
-    place: "Norrsken House Kigali",
-    kind: "Community",
-    body: "The official launch gathering of the IES Rwanda Chapter — talks, demos and the first call for student projects.",
-    status: "past",
-    register: "",
   },
   {
     date: "2022-08-22",

@@ -14,7 +14,7 @@ export function CTA() {
           <span className="text-grad">industrial future.</span>
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg text-paper/65">
-          Students, engineers and industry partners — there&apos;s a place for you in the chapter.
+          Students, engineers and industry partners: there&apos;s a place for you in the chapter.
           Membership is your door into the global IEEE IES community.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

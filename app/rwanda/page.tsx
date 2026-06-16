@@ -32,7 +32,7 @@ export default function RwandaPage() {
               Rwanda
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/85">
-              The <span className="font-semibold">Land of a Thousand Hills</span> — and one of
+              The <span className="font-semibold">Land of a Thousand Hills</span>, and one of
               Africa&apos;s fastest-rising technology nations. This is the home of our chapter.
             </p>
             <a

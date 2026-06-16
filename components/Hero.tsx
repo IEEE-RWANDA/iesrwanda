@@ -33,9 +33,6 @@ export function Hero() {
             {chapter.section}
           </span>
           <span className="hidden items-center px-4 py-1.5 sm:flex">{chapter.region}</span>
-          <span className="flex items-center px-4 py-1.5 font-semibold text-signal">
-            Est. {chapter.established}
-          </span>
         </motion.div>
 
         {/* kinetic headline */}
@@ -66,10 +63,10 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="mt-7 max-w-xl text-lg leading-relaxed text-paper/70"
         >
-          The Rwanda Chapter of the{" "}
-          <span className="text-paper">IEEE Industrial Electronics Society</span> — robotics,
-          mechatronics, power electronics and industrial AI, connecting Kigali to a global
-          community of 10,000+ engineers.
+          The{" "}
+          <span className="text-paper">IEEE Industrial Electronics Society Rwanda Chapter</span>{" "}
+          — robotics, mechatronics, power electronics and industrial AI, connecting Kigali to a
+          global community of 10,000+ engineers.
         </motion.p>
 
         <motion.div

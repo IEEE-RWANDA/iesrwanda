@@ -30,14 +30,14 @@ export default function ContactPage() {
       <section className="bg-ink py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[1.1fr_0.9fr]">
           <Reveal>
-            <SectionLabel index="01">Send a message</SectionLabel>
+            <SectionLabel index="06">Send a message</SectionLabel>
             <div className="mt-8">
               <ContactForm />
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
-            <SectionLabel index="02">Direct</SectionLabel>
+            <SectionLabel index="07">Direct</SectionLabel>
             <div className="mt-8 overflow-hidden rounded-2xl border border-paper/10">
               {channels.map((c) => (
                 <div

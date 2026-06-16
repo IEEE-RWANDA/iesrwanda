@@ -1,37 +1,26 @@
 # IEEE IES Rwanda Chapter
 
-Website for the **Rwanda Chapter of the IEEE Industrial Electronics Society (IES)**.
+Official website for the **Rwanda Chapter of the IEEE Industrial Electronics Society (IES)** — part of IEEE Rwanda Section, Region 8, established in Kigali in 2026.
 
-Built with Next.js (App Router), Tailwind CSS and Framer Motion. The theme mirrors
-[ieee-ies.org](https://www.ieee-ies.org) — white background, Helvetica, IES blue
-`#006699`, deep navy `#004263` and the IES orange accent `#ec8c00`.
+The site covers the chapter's mission across four technical pillars:
 
-## Getting started
-
-```bash
-npm install
-npm run dev      # http://localhost:3000
-```
-
-```bash
-npm run build    # production build
-npm start        # serve the production build
-```
-
-## Editing content
-
-Almost everything is driven from a single file — **[`lib/site.ts`](lib/site.ts)**:
-
-- Chapter name, email, location
-- Officers (set `photo: "/officers/<name>.jpg"` to add a headshot — drop the file in `public/officers/`)
-- Events, stats, membership tracks and benefits
-- `volunteerFormUrl` — paste your Google Form link here
-
-Brand assets live in `public/` (`logo.png`, `emblem.png`) and `app/icon.png` (favicon).
+- **Control, Robotics & Mechatronics** — intelligent control, motion control, autonomy
+- **Power Electronics & Drives** — converters, motor drives, renewable energy grids
+- **Factory Automation & Industry 4.0** — IIoT, flexible manufacturing, industrial communications
+- **Industrial AI & Instrumentation** — computational intelligence, vision systems, fault diagnosis
 
 ## Pages
 
-Home · About · Leadership · Events · Membership · Contact
+**Home · About · Leadership · Events · Rwanda · Membership · Contact**
 
-> Note: officer names and events are realistic placeholders — replace with real
-> chapter data in `lib/site.ts`.
+## Tech stack
+
+Built with [Next.js](https://nextjs.org) (App Router), [Tailwind CSS](https://tailwindcss.com) and [Framer Motion](https://www.framer.com/motion). Theme follows [ieee-ies.org](https://www.ieee-ies.org) — white background, IES blue `#006699`, deep navy `#004263`, IES orange `#ec8c00`.
+
+## Content
+
+All site content — chapter details, officers, events, membership tracks, social links and form URLs — is managed from a single file: [`lib/site.ts`](lib/site.ts).
+
+To add officer headshots, drop the image in `public/officers/` and set the `photo` field in [`lib/site.ts`](lib/site.ts) to `/officers/<filename>.jpg`.
+
+Brand assets (`logo.png`, `emblem.png`, `ieee-logo.png`, `ies-logo.png`) live in `public/`. The favicon is `app/icon.png`.
