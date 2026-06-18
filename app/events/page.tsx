@@ -22,7 +22,7 @@ export default function EventsPage() {
         index="03"
         kicker="Programme"
         title="Where the chapter gathers."
-        intro="Workshops, seminars, competitions and conferences — supported by IES grants of up to $4,000 per local activity. Here's what's coming and what we've built on."
+        intro="Workshops, seminars, competitions and conferences run by the chapter and its partners. Here's what's coming and what we've built on."
       />
 
       <section className="bg-ink py-20 sm:py-28">
@@ -81,8 +81,8 @@ function Timeline({
         )}
       </span>
       <article className="overflow-hidden rounded-2xl border border-paper/10 bg-ink-soft p-7 transition-colors hover:border-signal/40 sm:p-8">
-        <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr] lg:items-center">
-          <div>
+        <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr] lg:items-stretch">
+          <div className="flex flex-col">
             <div className="flex flex-wrap items-center gap-3">
               <span className="font-mono text-sm text-signal">{event.when}</span>
               <span className="text-paper/20">·</span>
@@ -94,7 +94,7 @@ function Timeline({
               {event.title}
             </h3>
             <p className="mt-2 leading-relaxed text-paper/65">{event.body}</p>
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+            <div className="mt-auto flex flex-wrap items-center justify-between gap-3 pt-5">
               <div className="font-mono text-xs text-paper/50">↳ {event.place}</div>
               {live && event.register && (
                 <a
@@ -104,6 +104,16 @@ function Timeline({
                   className="inline-flex items-center gap-1.5 rounded-full bg-signal px-5 py-2.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
                 >
                   Register →
+                </a>
+              )}
+              {!live && "photos" in event && event.photos && (
+                <a
+                  href={event.photos}
+                  target={event.photos.startsWith("http") ? "_blank" : undefined}
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-paper/20 px-5 py-2.5 text-sm font-semibold text-paper transition-colors hover:border-signal/50 hover:text-signal"
+                >
+                  View photos →
                 </a>
               )}
             </div>

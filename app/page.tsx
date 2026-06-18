@@ -157,7 +157,7 @@ export default function HomePage() {
           <RevealGroup className="grid gap-5 md:grid-cols-2">
             {events.slice(0, 4).map((e) => (
               <RevealItem key={e.title}>
-                <article className="group relative h-full overflow-hidden rounded-2xl border border-paper/10 bg-ink-soft p-7 transition-colors hover:border-signal/40">
+                <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-paper/10 bg-ink-soft p-7 transition-colors hover:border-signal/40">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-xs uppercase tracking-widest text-signal">
                       {e.kind}
@@ -176,21 +176,33 @@ export default function HomePage() {
                     {e.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-paper/60">{e.body}</p>
-                  <div className="mt-5 flex items-center gap-3 font-mono text-xs text-paper/50">
-                    <span>{e.when}</span>
-                    <span className="text-paper/20">·</span>
-                    <span>{e.place}</span>
+                  <div className="mt-auto pt-5">
+                    <div className="flex items-center gap-3 font-mono text-xs text-paper/50">
+                      <span>{e.when}</span>
+                      <span className="text-paper/20">·</span>
+                      <span>{e.place}</span>
+                    </div>
+                    {e.status === "upcoming" && e.register && (
+                      <a
+                        href={e.register}
+                        target={e.register.startsWith("http") ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-signal px-4 py-2 text-xs font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
+                      >
+                        Register →
+                      </a>
+                    )}
+                    {e.status !== "upcoming" && "photos" in e && e.photos && (
+                      <a
+                        href={e.photos}
+                        target={e.photos.startsWith("http") ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                        className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-paper/20 px-4 py-2 text-xs font-semibold text-paper transition-colors hover:border-signal/50 hover:text-signal"
+                      >
+                        View photos →
+                      </a>
+                    )}
                   </div>
-                  {e.status === "upcoming" && e.register && (
-                    <a
-                      href={e.register}
-                      target={e.register.startsWith("http") ? "_blank" : undefined}
-                      rel="noopener noreferrer"
-                      className="mt-5 inline-flex items-center gap-1.5 rounded-full bg-signal px-4 py-2 text-xs font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
-                    >
-                      Register →
-                    </a>
-                  )}
                 </article>
               </RevealItem>
             ))}

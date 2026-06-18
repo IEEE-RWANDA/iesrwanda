@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHeader
-        index="05"
+        index="06"
         kicker="Get in touch"
         title="Let's build something."
         intro="Whether you're a student, an engineer or a company in Rwanda's industrial space — we'd love to hear from you."

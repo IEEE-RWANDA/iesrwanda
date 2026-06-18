@@ -11,7 +11,7 @@ export const chapter = {
   tagline: "The industrial intelligence of Rwanda — engineered locally.",
   established: "2026",
   location: "Kigali, Rwanda",
-  email: "ies.rwanda@ieee.org",
+  email: "info@iesrwanda.org",
 };
 
 export const nav = [
@@ -21,7 +21,7 @@ export const nav = [
   { label: "Events", href: "/events" },
   { label: "Rwanda", href: "/rwanda" },
   { label: "Membership", href: "/membership" },
-  { label: "Contact", href: "/contact" },
+  { label: "Partners", href: "/partners" },
 ];
 
 // "Visit Rwanda" tourism page — swap for any YouTube video id you prefer.
@@ -229,10 +229,10 @@ export const links = {
 // Chapter social channels. Replace "#" with the real URLs once the accounts
 // exist — the footer auto-hides nothing; links just point to "#" until then.
 export const socials = [
-  { key: "tiktok", name: "TikTok", href: "#" },
-  { key: "instagram", name: "Instagram", href: "#" },
-  { key: "linkedin", name: "LinkedIn", href: "#" },
-  { key: "youtube", name: "YouTube", href: "#" },
+  { key: "tiktok", name: "TikTok", href: "https://www.tiktok.com/@iesrwanda" },
+  { key: "instagram", name: "Instagram", href: "https://www.instagram.com/iesrwanda" },
+  { key: "linkedin", name: "LinkedIn", href: "https://www.linkedin.com/company/iesrwanda" },
+  { key: "youtube", name: "YouTube", href: "https://www.youtube.com/@iesrwanda" },
 ];
 
 // Events — anchored to real IEEE-in-Rwanda activity + plausible chapter events
@@ -241,25 +241,36 @@ export const socials = [
 export const events = [
   {
     date: "2026-07-03",
-    when: "3 Jul 2026",
-    title: "IEEE IES Rwanda Chapter — Official Launch",
+    when: "3 Jul 2026 · 1:30–7:00 PM",
+    title: "IEEE IES IAC Innovation & Resilience Summit",
     place: "Kigali, Rwanda",
-    kind: "Community",
-    body: "The inaugural gathering of the IEEE IES Rwanda Chapter: welcoming members, setting the technical agenda, and marking Rwanda's entry into the global IES community.",
+    kind: "Summit",
+    body: "An afternoon of industry fireside chats, lessons in entrepreneurship resilience and active networking — bringing together engineers, founders and students across the Hubs & Nodes community, capped by an evening networking reception.",
     status: "upcoming",
-    register: "#", // paste the registration URL (Google Form, Eventbrite, vTools…)
-    image: "", // event poster → /public/events/launch-poster.jpg
+    register: "https://events.vtools.ieee.org/m/563984",
+    image: "", // event poster → /public/events/iac-summit.jpg
   },
   {
-    date: "2026-07-03",
-    when: "3 Jul 2026",
-    title: "Industrial AI in Practice — Workshop",
-    place: "Kigali, Rwanda",
-    kind: "Workshop",
-    body: "A hands-on session on applied industrial AI led by Darryl Palmer, IEEE IES Industrial Activities Committee & IEEE Entrepreneurship Liaison.",
+    date: "2026-07-04",
+    when: "4 Jul 2026 · full day",
+    title: "IEEE Rwanda Subsection Launch & Societies Engagement Forum",
+    place: "CMU-Africa, Kigali, Rwanda",
+    kind: "Community",
+    body: "The official activation of the first IEEE geographic unit in Rwanda. ~200 engineers, students, faculty, industry and government gather for the Launch Ceremony, a Societies & Affinity Groups panel, parallel IES/GRSS/MTT-S/COMSOC workshops, a Humanitarian Technologies plenary, a Student Branch leadership workshop and an evening gala. Co-sponsored by IEEE IES, MTT-S, GRSS, COMSOC, the IEEE Foundation, Smart Cities and Young Professionals.",
     status: "upcoming",
-    register: "#", // paste the registration URL
-    image: "", // event poster
+    register: "https://events.vtools.ieee.org/m/560894",
+    image: "", // registration poster → /public/events/subsection-launch.jpg
+  },
+  {
+    date: "2026-09-19",
+    when: "19 Sep 2026",
+    title: "IEEE IES Rwanda Chapter Industrial Visit",
+    place: "Kigali, Rwanda",
+    kind: "Industry Visit",
+    body: "A half-day industrial visit hosting members at a leading Rwandan facility — opening remarks, a presentation on the host's technology and Rwanda operations, a facility tour, a technical deep dive and a Q&A with engineers. Host industry to be announced soon.",
+    status: "upcoming",
+    register: "https://events.vtools.ieee.org/m/564193",
+    image: "", // event photo → /public/events/industrial-visit.jpg
   },
   {
     date: "2026-05-28",
@@ -270,7 +281,8 @@ export const events = [
     body: "Under the theme “Collaboration for Africa’s Sustainable Industrial Future,” the East African Hub summit brought together engineers, researchers, students, startups and industry leaders — spanning AI, IoT, robotics and automation to smart energy and sustainable infrastructure — to drive Africa’s industrial transformation.",
     status: "past",
     register: "",
-    image: "", // event photo → /public/events/east-africa-summit-2026.jpg
+    photos: "https://almasimediacreatives13.pixieset.com/ieeeiessummit2026/",
+    image: "/events/hubsandnodes.jpg", // event photo
   },
 ];
 
@@ -310,5 +322,33 @@ export const tracks = [
     name: "Industry Partner",
     line: "Companies & institutions",
     points: ["Talent pipeline & demos", "Co-hosted workshops", "R&D collaboration"],
+  },
+];
+
+// Partnerships — ways organisations can work with the chapter
+export const partnerWays = [
+  {
+    title: "Industry host",
+    line: "Open your doors",
+    body: "Host an industrial visit or facility tour — show students and engineers real Rwandan operations, and put your technology in front of the country's emerging industrial talent.",
+    points: ["Facility tours & technical deep dives", "Direct access to student talent", "Brand visibility across the chapter"],
+  },
+  {
+    title: "Event sponsor",
+    line: "Power our programme",
+    body: "Back a workshop, summit or competition. Sponsorship keeps chapter activities free and open while putting your name alongside IEEE and the wider East African engineering community.",
+    points: ["Logo & speaking slots at events", "Co-branded sessions", "Reach across IEEE Region 8 networks"],
+  },
+  {
+    title: "R&D collaborator",
+    line: "Build together",
+    body: "Partner on applied research in industrial electronics, automation, IoT and smart energy — connecting your challenges to the chapter's members, universities and the global IES technical community.",
+    points: ["Joint research & pilots", "Access to IES technical committees", "University & faculty links"],
+  },
+  {
+    title: "Talent pipeline",
+    line: "Find your next engineers",
+    body: "Recruit and mentor through the chapter — from internships and capstone projects to graduate hiring across seven Rwandan universities and the broader student network.",
+    points: ["Internships & capstone projects", "Mentorship programmes", "Graduate recruitment access"],
   },
 ];
