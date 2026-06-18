@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { chapter, nav, socials } from "@/lib/site";
+import { chapter, footerNav, socials } from "@/lib/site";
 import { SocialIcon } from "./SocialIcon";
 
 export function Footer() {
@@ -42,7 +42,7 @@ export function Footer() {
           <div>
             <h4 className="tag mb-4">Navigate</h4>
             <ul className="space-y-2.5">
-              {nav.map((item) => (
+              {footerNav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}

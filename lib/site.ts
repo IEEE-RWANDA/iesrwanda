@@ -14,14 +14,27 @@ export const chapter = {
   email: "info@iesrwanda.org",
 };
 
+// Primary navbar — kept to the handful of things visitors come to do.
+// Secondary pages (Leadership, Rwanda, Contact) live in the footer sitemap below.
 export const nav = [
-  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Events", href: "/events" },
+  { label: "Membership", href: "/membership" },
+  { label: "Resources", href: "/resources" },
+  { label: "Partners", href: "/partners" },
+];
+
+// Full sitemap for the footer — every page, including the secondary ones the
+// navbar no longer shows.
+export const footerNav = [
   { label: "About", href: "/about" },
   { label: "Leadership", href: "/leadership" },
   { label: "Events", href: "/events" },
   { label: "Rwanda", href: "/rwanda" },
   { label: "Membership", href: "/membership" },
+  { label: "Resources", href: "/resources" },
   { label: "Partners", href: "/partners" },
+  { label: "Contact", href: "/contact" },
 ];
 
 // "Visit Rwanda" tourism page — swap for any YouTube video id you prefer.
@@ -212,8 +225,10 @@ export const officers = [
 // Volunteer sign-up — replace "#" with your Google Form URL when ready.
 export const volunteerFormUrl = "#";
 
-// "Start a Student Branch Chapter" — replace "#" with your Google Form URL.
-export const studentBranchFormUrl = "#";
+// "Start a Student Branch Chapter" — the official IEEE IES petition page that
+// walks a university through forming a new IES Student Branch Chapter.
+export const studentBranchFormUrl =
+  "https://www.ieee-ies.org/membership/students/form-a-new-student-chapter";
 
 // Official IEEE membership join page.
 export const ieeeJoinUrl = "https://www.ieee.org/membership/join.html";
@@ -224,7 +239,52 @@ export const links = {
   ieeeSocieties: "https://www.ieee.org/communities/societies/index.html",
   ies: "https://www.ieee-ies.org",
   iesConferences: "https://www.ieee-ies.org/conferences",
+  resourceCenter: "https://resourcecenter.ies.ieee.org",
 };
+
+// IES Resource Center — the society's free online learning library.
+// Everything is free: members, IEEE members and non-members alike.
+export const resourceCenterUrl = "https://resourcecenter.ies.ieee.org";
+
+// The kinds of learning material the Resource Center hosts.
+export const resourceCategories = [
+  {
+    title: "Webinars",
+    body: "Live and recorded technical talks from leading IES researchers — AI and IIoT systems, power electronics, electric vehicles, machine learning and more.",
+    tags: ["Live & on-demand", "Expert speakers"],
+  },
+  {
+    title: "Tutorials & short courses",
+    body: "In-depth training modules that take you from fundamentals to advanced topics across the industrial electronics field — learn at your own pace.",
+    tags: ["Self-paced", "Beginner → advanced"],
+  },
+  {
+    title: "Conference recordings",
+    body: "Sessions and presentations from the society's flagship conferences — IECON, ISIE and ICIT — so you can catch the research even if you couldn't attend.",
+    tags: ["IECON", "ISIE", "ICIT"],
+  },
+  {
+    title: "Member resources",
+    body: "Programmes and content for Women in IES and for students & young professionals — career guidance, mentorship talks and community resources.",
+    tags: ["Women in IES", "Students & YP"],
+  },
+];
+
+// Why the Resource Center is worth pointing the chapter community to.
+export const resourceHighlights = [
+  {
+    title: "Free for everyone",
+    body: "Members, IEEE members and non-members all access the content at no cost — there's no paywall between you and the learning.",
+  },
+  {
+    title: "Taught by the field's leaders",
+    body: "Material comes straight from IES technical committees and conference speakers — the same researchers shaping industrial electronics worldwide.",
+  },
+  {
+    title: "Built for every stage",
+    body: "Whether you're a student just starting out or a working engineer, there's a track from fundamentals through to specialised, advanced topics.",
+  },
+];
 
 // Chapter social channels. Replace "#" with the real URLs once the accounts
 // exist — the footer auto-hides nothing; links just point to "#" until then.

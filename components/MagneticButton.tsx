@@ -10,11 +10,13 @@ export function MagneticButton({
   children,
   variant = "solid",
   className = "",
+  external = false,
 }: {
   href: string;
   children: ReactNode;
   variant?: "solid" | "ghost";
   className?: string;
+  external?: boolean;
 }) {
   const ref = useRef<HTMLAnchorElement>(null);
   const reduce = useReducedMotion();
@@ -46,6 +48,8 @@ export function MagneticButton({
       <Link
         ref={ref}
         href={href}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noopener noreferrer" : undefined}
         onMouseMove={onMove}
         onMouseLeave={reset}
         className={`${base} ${styles} ${className}`}

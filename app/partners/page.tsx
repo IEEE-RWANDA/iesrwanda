@@ -4,7 +4,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { MagneticButton } from "@/components/MagneticButton";
 import { PartnerWays } from "@/components/PartnerWays";
-import { partnerWays, chapter } from "@/lib/site";
+import { partnerWays, chapter, studentBranchFormUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Partners — IEEE IES Rwanda Chapter",
@@ -97,6 +97,35 @@ export default function PartnersPage() {
                 <div className="mt-auto pt-8">
                   <MagneticButton href={`mailto:${chapter.email}?subject=K-12%20STEM%20outreach`}>
                     Bring us to your school →
+                  </MagneticButton>
+                </div>
+              </div>
+            </RevealItem>
+            <RevealItem>
+              <div className="flex h-full flex-col rounded-2xl border border-paper/10 bg-ink p-8 transition-colors hover:border-signal/40">
+                <p className="font-mono text-xs uppercase tracking-wider text-signal">Universities</p>
+                <h3 className="mt-2 font-display text-2xl font-bold tracking-tight">Form a Student Branch Chapter</h3>
+                <p className="mt-3 leading-relaxed text-paper/65">
+                  Has your university an IEEE Student Branch? Petition to add an IES
+                  Student Branch Chapter — the official path to bringing industrial
+                  electronics activities, grants and the global IES network to your
+                  campus. The chapter is glad to help your students through the process.
+                </p>
+                <ul className="mt-6 space-y-3 border-t border-paper/10 pt-6">
+                  {[
+                    "Official IEEE IES petition process",
+                    "Project grants & student programmes",
+                    "We'll guide your students through it",
+                  ].map((p) => (
+                    <li key={p} className="flex items-start gap-3 text-paper/75">
+                      <span className="mt-1 text-signal">→</span>
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-8">
+                  <MagneticButton href={studentBranchFormUrl} external>
+                    Petition for a chapter →
                   </MagneticButton>
                 </div>
               </div>
