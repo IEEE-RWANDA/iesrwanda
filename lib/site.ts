@@ -322,6 +322,17 @@ export const events = [
     image: "", // registration poster → /public/events/subsection-launch.jpg
   },
   {
+    date: "2026-07-24",
+    when: "24 Jul 2026 · 11:00 AM–12:00 PM",
+    title: "Industrial Visit to Volkswagen Mobility Solutions Rwanda",
+    place: "Special Economic Zone, Kigali, Rwanda",
+    kind: "Industry Visit",
+    body: "A behind-the-scenes look at vehicle assembly in Rwanda — a guided tour of the production line, an overview of the technologies and engineering processes used, and insights into career pathways in the automotive and e-mobility sector. Hosted with the IEEE Rwanda Sub-Section and IEEE Young Professionals Rwanda to connect students and young professionals with industry practice.",
+    status: "upcoming",
+    register: "https://events.vtools.ieee.org/m/565607",
+    image: "", // event photo → /public/events/vw-visit.jpg
+  },
+  {
     date: "2026-09-19",
     when: "19 Sep 2026",
     title: "IEEE IES Rwanda Chapter Industrial Visit",
