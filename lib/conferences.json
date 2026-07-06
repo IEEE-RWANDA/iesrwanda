@@ -1,0 +1,58 @@
+[
+  {
+    "acronym": "IECON",
+    "name": "Annual Conference of the IEEE Industrial Electronics Society",
+    "focus": "The society's flagship — the full breadth of industrial electronics.",
+    "flagship": true,
+    "students": false,
+    "url": "https://www.ieee-ies.org/conferences"
+  },
+  {
+    "acronym": "ISIE",
+    "name": "International Symposium on Industrial Electronics",
+    "focus": "Emerging research across the IES field of interest.",
+    "flagship": false,
+    "students": false,
+    "url": "http://www.ieee-isie.org"
+  },
+  {
+    "acronym": "ICIT",
+    "name": "International Conference on Industrial Technology",
+    "focus": "Industrial technology, drives and real-world applications.",
+    "flagship": false,
+    "students": false,
+    "url": "https://www.ieee-ies.org/conferences"
+  },
+  {
+    "acronym": "INDIN",
+    "name": "International Conference on Industrial Informatics",
+    "focus": "Industrial informatics, IIoT and cyber-physical systems.",
+    "flagship": false,
+    "students": false,
+    "url": "https://www.ieee-ies.org/conferences"
+  },
+  {
+    "acronym": "ETFA",
+    "name": "IEEE International Conference on Emerging Technologies and Factory Automation",
+    "focus": "ETFA 2026 runs 8–11 September in Västerås, Sweden — factory automation and emerging industrial technologies. Held annually.",
+    "flagship": false,
+    "students": false,
+    "url": "https://etfa2026.ieee-ies.org/"
+  },
+  {
+    "acronym": "ICPS",
+    "name": "International Conference on Industrial Cyber-Physical Systems",
+    "focus": "The convergence of computation, networking and the physical plant.",
+    "flagship": false,
+    "students": false,
+    "url": "https://www.ieee-ies.org/conferences"
+  },
+  {
+    "acronym": "SYP",
+    "name": "Students and Young Professionals Congress",
+    "focus": "A standalone annual gathering for IES students and young professionals. SYP Congress 2026 runs 13–15 August in Rio de Janeiro, Brazil. The Paper Assistance Program (SYPA) separately helps SYP members attend the flagship conferences.",
+    "flagship": false,
+    "students": true,
+    "url": "https://www.ieee-ies.org/membership/students"
+  }
+]

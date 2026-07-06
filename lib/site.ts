@@ -1,3 +1,6 @@
+import conferencesData from "./conferences.json";
+import officersData from "./officers.json";
+import eventsData from "./events.json";
 // Central content source for the IEEE IES Rwanda Chapter site.
 // Placeholder people/events are clearly editable — swap for real data.
 
@@ -131,65 +134,7 @@ export const pillars = [
 // Students & Young Professionals programme. Members get discounted access.
 // `url`: conferences rotate host cities yearly — these point to the official
 // IES listing / stable umbrella sites. Swap for a specific year if you like.
-export const conferences = [
-  {
-    acronym: "IECON",
-    name: "Annual Conference of the IEEE Industrial Electronics Society",
-    focus: "The society's flagship — the full breadth of industrial electronics.",
-    flagship: true,
-    students: false,
-    url: "https://www.ieee-ies.org/conferences",
-  },
-  {
-    acronym: "ISIE",
-    name: "International Symposium on Industrial Electronics",
-    focus: "Emerging research across the IES field of interest.",
-    flagship: false,
-    students: false,
-    url: "http://www.ieee-isie.org",
-  },
-  {
-    acronym: "ICIT",
-    name: "International Conference on Industrial Technology",
-    focus: "Industrial technology, drives and real-world applications.",
-    flagship: false,
-    students: false,
-    url: "https://www.ieee-ies.org/conferences",
-  },
-  {
-    acronym: "INDIN",
-    name: "International Conference on Industrial Informatics",
-    focus: "Industrial informatics, IIoT and cyber-physical systems.",
-    flagship: false,
-    students: false,
-    url: "https://www.ieee-ies.org/conferences",
-  },
-  {
-    acronym: "ETFA",
-    name: "IEEE International Conference on Emerging Technologies and Factory Automation",
-    focus: "ETFA 2026 runs 8–11 September in Västerås, Sweden — factory automation and emerging industrial technologies. Held annually.",
-    flagship: false,
-    students: false,
-    url: "https://etfa2026.ieee-ies.org/",
-  },
-  {
-    acronym: "ICPS",
-    name: "International Conference on Industrial Cyber-Physical Systems",
-    focus: "The convergence of computation, networking and the physical plant.",
-    flagship: false,
-    students: false,
-    url: "https://www.ieee-ies.org/conferences",
-  },
-  {
-    acronym: "SYP",
-    name: "Students and Young Professionals Congress",
-    focus:
-      "A standalone annual gathering for IES students and young professionals. SYP Congress 2026 runs 13–15 August in Rio de Janeiro, Brazil. The Paper Assistance Program (SYPA) separately helps SYP members attend the flagship conferences.",
-    flagship: false,
-    students: true,
-    url: "https://www.ieee-ies.org/membership/students",
-  },
-];
+export const conferences = conferencesData;
 
 // Stacked story: IEEE → IES → Rwanda
 export const story = [
@@ -216,11 +161,7 @@ export const story = [
 // Leadership — the chapter's executive committee.
 // Add a real headshot by dropping the file in /public/officers and setting
 // `photo` to e.g. "/officers/kipngeno.jpg". Leave "" to show the placeholder.
-export const officers = [
-  { name: "Kipngeno Koech", role: "Chapter Chair", affil: "", initials: "KK", photo: "/officers/kip.jpg" },
-  { name: "Gentille Uwera", role: "Treasurer", affil: "", initials: "GU", photo: "/officers/gentille.jpg" },
-  { name: "David Stephen", role: "Secretary", affil: "", initials: "DS", photo: "/officers/david.png" },
-];
+export const officers = officersData;
 
 // Volunteer sign-up — replace "#" with your Google Form URL when ready.
 export const volunteerFormUrl = "#";
@@ -298,64 +239,7 @@ export const socials = [
 // Events — anchored to real IEEE-in-Rwanda activity + plausible chapter events
 // `image`: for UPCOMING events drop an event poster, for PAST events a photo,
 // in /public/events/ and set the path (e.g. "/events/launch-poster.jpg").
-export const events = [
-  {
-    date: "2026-07-03",
-    when: "3 Jul 2026 · 1:30–7:00 PM",
-    title: "IEEE IES IAC Innovation & Resilience Summit",
-    place: "Kigali, Rwanda",
-    kind: "Summit",
-    body: "An afternoon of industry fireside chats, lessons in entrepreneurship resilience and active networking — bringing together engineers, founders and students across the Hubs & Nodes community, capped by an evening networking reception.",
-    status: "upcoming",
-    register: "https://events.vtools.ieee.org/m/563984",
-    image: "", // event poster → /public/events/iac-summit.jpg
-  },
-  {
-    date: "2026-07-04",
-    when: "4 Jul 2026 · full day",
-    title: "IEEE Rwanda Subsection Launch & Societies Engagement Forum",
-    place: "CMU-Africa, Kigali, Rwanda",
-    kind: "Community",
-    body: "The official activation of the first IEEE geographic unit in Rwanda. ~200 engineers, students, faculty, industry and government gather for the Launch Ceremony, a Societies & Affinity Groups panel, parallel IES/GRSS/MTT-S/COMSOC workshops, a Humanitarian Technologies plenary, a Student Branch leadership workshop and an evening gala. Co-sponsored by IEEE IES, MTT-S, GRSS, COMSOC, the IEEE Foundation, Smart Cities and Young Professionals.",
-    status: "upcoming",
-    register: "https://events.vtools.ieee.org/m/560894",
-    image: "", // registration poster → /public/events/subsection-launch.jpg
-  },
-  {
-    date: "2026-07-24",
-    when: "24 Jul 2026 · 11:00 AM–12:00 PM",
-    title: "Industrial Visit to Volkswagen Mobility Solutions Rwanda",
-    place: "Special Economic Zone, Kigali, Rwanda",
-    kind: "Industry Visit",
-    body: "A behind-the-scenes look at vehicle assembly in Rwanda — a guided tour of the production line, an overview of the technologies and engineering processes used, and insights into career pathways in the automotive and e-mobility sector. Hosted with the IEEE Rwanda Sub-Section and IEEE Young Professionals Rwanda to connect students and young professionals with industry practice.",
-    status: "upcoming",
-    register: "https://events.vtools.ieee.org/m/565607",
-    image: "", // event photo → /public/events/vw-visit.jpg
-  },
-  {
-    date: "2026-09-19",
-    when: "19 Sep 2026",
-    title: "IEEE IES Rwanda Chapter Industrial Visit",
-    place: "Kigali, Rwanda",
-    kind: "Industry Visit",
-    body: "A half-day industrial visit hosting members at a leading Rwandan facility — opening remarks, a presentation on the host's technology and Rwanda operations, a facility tour, a technical deep dive and a Q&A with engineers. Host industry to be announced soon.",
-    status: "upcoming",
-    register: "https://events.vtools.ieee.org/m/564193",
-    image: "", // event photo → /public/events/industrial-visit.jpg
-  },
-  {
-    date: "2026-05-28",
-    when: "28–30 May 2026",
-    title: "IEEE IES East Africa Industrial Innovation Summit 2026",
-    place: "Nairobi, Kenya",
-    kind: "Summit",
-    body: "Under the theme “Collaboration for Africa’s Sustainable Industrial Future,” the East African Hub summit brought together engineers, researchers, students, startups and industry leaders — spanning AI, IoT, robotics and automation to smart energy and sustainable infrastructure — to drive Africa’s industrial transformation.",
-    status: "past",
-    register: "",
-    photos: "https://almasimediacreatives13.pixieset.com/ieeeiessummit2026/",
-    image: "/events/hubsandnodes.jpg", // event photo
-  },
-];
+export const events = eventsData;
 
 // Membership benefits
 export const benefits = [

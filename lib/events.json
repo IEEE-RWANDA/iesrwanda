@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2026-07-03",
+    "when": "3 Jul 2026 · 1:30–7:00 PM",
+    "title": "IEEE IES IAC Innovation & Resilience Summit",
+    "place": "Kigali, Rwanda",
+    "kind": "Summit",
+    "body": "An afternoon of industry fireside chats, lessons in entrepreneurship resilience and active networking — bringing together engineers, founders and students across the Hubs & Nodes community, capped by an evening networking reception.",
+    "status": "upcoming",
+    "register": "https://events.vtools.ieee.org/m/563984",
+    "image": ""
+  },
+  {
+    "date": "2026-07-04",
+    "when": "4 Jul 2026 · full day",
+    "title": "IEEE Rwanda Subsection Launch & Societies Engagement Forum",
+    "place": "CMU-Africa, Kigali, Rwanda",
+    "kind": "Community",
+    "body": "The official activation of the first IEEE geographic unit in Rwanda. ~200 engineers, students, faculty, industry and government gather for the Launch Ceremony, a Societies & Affinity Groups panel, parallel IES/GRSS/MTT-S/COMSOC workshops, a Humanitarian Technologies plenary, a Student Branch leadership workshop and an evening gala. Co-sponsored by IEEE IES, MTT-S, GRSS, COMSOC, the IEEE Foundation, Smart Cities and Young Professionals.",
+    "status": "upcoming",
+    "register": "https://events.vtools.ieee.org/m/560894",
+    "image": ""
+  },
+  {
+    "date": "2026-07-24",
+    "when": "24 Jul 2026 · 11:00 AM–12:00 PM",
+    "title": "Industrial Visit to Volkswagen Mobility Solutions Rwanda",
+    "place": "Special Economic Zone, Kigali, Rwanda",
+    "kind": "Industry Visit",
+    "body": "A behind-the-scenes look at vehicle assembly in Rwanda — a guided tour of the production line, an overview of the technologies and engineering processes used, and insights into career pathways in the automotive and e-mobility sector. Hosted with the IEEE Rwanda Sub-Section and IEEE Young Professionals Rwanda to connect students and young professionals with industry practice.",
+    "status": "upcoming",
+    "register": "https://events.vtools.ieee.org/m/565607",
+    "image": ""
+  },
+  {
+    "date": "2026-09-19",
+    "when": "19 Sep 2026",
+    "title": "IEEE IES Rwanda Chapter Industrial Visit",
+    "place": "Kigali, Rwanda",
+    "kind": "Industry Visit",
+    "body": "A half-day industrial visit hosting members at a leading Rwandan facility — opening remarks, a presentation on the host's technology and Rwanda operations, a facility tour, a technical deep dive and a Q&A with engineers. Host industry to be announced soon.",
+    "status": "upcoming",
+    "register": "https://events.vtools.ieee.org/m/564193",
+    "image": ""
+  },
+  {
+    "date": "2026-05-28",
+    "when": "28–30 May 2026",
+    "title": "IEEE IES East Africa Industrial Innovation Summit 2026",
+    "place": "Nairobi, Kenya",
+    "kind": "Summit",
+    "body": "Under the theme “Collaboration for Africa’s Sustainable Industrial Future,” the East African Hub summit brought together engineers, researchers, students, startups and industry leaders — spanning AI, IoT, robotics and automation to smart energy and sustainable infrastructure — to drive Africa’s industrial transformation.",
+    "status": "past",
+    "register": "",
+    "photos": "https://almasimediacreatives13.pixieset.com/ieeeiessummit2026/",
+    "image": "/events/hubsandnodes.jpg"
+  }
+]
