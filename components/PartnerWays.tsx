@@ -55,7 +55,7 @@ export function PartnerWays({ ways }: { ways: Way[] }) {
             onClick={() => setActive(null)}
             role="dialog"
             aria-modal="true"
-            aria-label={`${active.title} — coming soon`}
+            aria-label={`${active.title} partnership details`}
           >
             <div className="absolute inset-0 bg-coal/80 backdrop-blur-sm" />
             <motion.div
@@ -82,15 +82,21 @@ export function PartnerWays({ ways }: { ways: Way[] }) {
               />
               <p className="mt-6 font-mono text-xs uppercase tracking-wider text-signal">{active.line}</p>
               <h3 className="mt-2 font-display text-3xl font-bold tracking-tight">{active.title}</h3>
-              <p className="mt-4 text-lg font-semibold text-paper">Coming soon.</p>
-              <p className="mt-2 leading-relaxed text-paper/60">
-                We&apos;re building this out. Want to be first in line?
-              </p>
+              <p className="mt-4 leading-relaxed text-paper/65">{active.body}</p>
+              <ul className="mt-6 space-y-2 border-t border-paper/10 pt-5 text-left">
+                {active.points.map((point) => (
+                  <li key={point} className="flex items-start gap-3 text-sm text-paper/75">
+                    <span className="mt-0.5 text-signal">→</span>
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
               <a
-                href={`mailto:info@iesrwanda.org?subject=${encodeURIComponent(active.title + " — partnership enquiry")}`}
+                href="#partnership-enquiry"
+                onClick={() => setActive(null)}
                 className="mt-7 inline-flex items-center gap-1.5 rounded-full bg-signal px-6 py-3 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
               >
-                Talk to us →
+                Start an enquiry →
               </a>
             </motion.div>
           </motion.div>

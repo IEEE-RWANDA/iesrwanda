@@ -136,7 +136,7 @@ export default function PartnersPage() {
       </section>
 
       {/* partnership enquiry */}
-      <section className="bg-ink py-20 sm:py-28">
+      <section id="partnership-enquiry" className="scroll-mt-20 bg-ink py-20 sm:py-28">
         <div className="mx-auto max-w-5xl px-5 sm:px-8">
           <Reveal className="mb-12">
             <SectionLabel index="03">Start a partnership</SectionLabel>
