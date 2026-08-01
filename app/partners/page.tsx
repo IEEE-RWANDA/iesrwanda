@@ -4,6 +4,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { MagneticButton } from "@/components/MagneticButton";
 import { PartnerWays } from "@/components/PartnerWays";
+import { PartnerInquiryForm } from "@/components/PartnerInquiryForm";
 import { partnerWays, chapter, studentBranchFormUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -131,6 +132,25 @@ export default function PartnersPage() {
               </div>
             </RevealItem>
           </RevealGroup>
+        </div>
+      </section>
+
+      {/* partnership enquiry */}
+      <section className="bg-ink py-20 sm:py-28">
+        <div className="mx-auto max-w-5xl px-5 sm:px-8">
+          <Reveal className="mb-12">
+            <SectionLabel index="03">Start a partnership</SectionLabel>
+            <h2 className="mt-5 max-w-3xl font-display text-3xl font-bold tracking-tight sm:text-5xl">
+              Tell us what you want to build together.
+            </h2>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-paper/60">
+              Share your organisation, proposal links and supporting documents. The chapter team
+              will review your enquiry and reply directly.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <PartnerInquiryForm />
+          </Reveal>
         </div>
       </section>
 

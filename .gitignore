@@ -29,3 +29,10 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# package store — never commit the pnpm content-addressable store
+.pnpm-store/
+
+# one-off generated / personal documents (kept locally, not in the repo)
+output/pdf/IEEE_IES_Rwanda_Expense_Report_KOECH_BRIAN.pdf
+output/pdf/IEEE_IES_Rwanda_RECEIPT.pdf

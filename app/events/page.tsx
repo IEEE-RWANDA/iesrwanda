@@ -80,9 +80,9 @@ function Timeline({
           <span className="absolute inset-0 animate-ping rounded-full bg-signal opacity-75" />
         )}
       </span>
-      <article className="overflow-hidden rounded-2xl border border-paper/10 bg-ink-soft p-7 transition-colors hover:border-signal/40 sm:p-8">
-        <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr] lg:items-stretch">
-          <div className="flex flex-col">
+      <article className="overflow-hidden rounded-2xl border border-paper/10 bg-ink-soft transition-colors hover:border-signal/40">
+        <div className="grid md:grid-cols-[1.4fr_1fr] md:items-stretch">
+          <div className="flex flex-col p-7 sm:p-8">
             <div className="flex flex-wrap items-center gap-3">
               <span className="font-mono text-sm text-signal">{event.when}</span>
               <span className="text-paper/20">·</span>
@@ -120,6 +120,7 @@ function Timeline({
           </div>
           <EventMedia
             image={event.image}
+            agenda={"agenda" in event ? event.agenda : undefined}
             variant={live ? "poster" : "photo"}
             kind={event.kind}
           />

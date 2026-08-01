@@ -88,14 +88,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-start justify-between gap-4 border-t border-paper/10 pt-6 font-mono text-[11px] uppercase tracking-wider text-paper/40 sm:flex-row sm:items-center">
+        <div className="mt-10 border-t border-paper/10 pt-6 font-mono text-[11px] uppercase tracking-wider text-paper/40">
           <span>
             © {chapter.established} IEEE IES Rwanda Chapter · Established {chapter.established},
             Kigali
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-leaf" />
-            Status: Active
           </span>
         </div>
       </div>

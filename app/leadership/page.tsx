@@ -4,7 +4,8 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { CTA } from "@/components/CTA";
 import { PersonPhoto } from "@/components/PersonPhoto";
-import { officers, volunteerFormUrl } from "@/lib/site";
+import { VolunteerForm } from "@/components/VolunteerForm";
+import { officers } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Leadership — IEEE IES Rwanda Chapter",
@@ -47,26 +48,7 @@ export default function LeadershipPage() {
           </RevealGroup>
 
           <Reveal delay={0.1} className="mt-12">
-            <div className="rounded-2xl border border-dashed border-paper/20 bg-ink-soft/60 p-8 text-center">
-              <p className="font-mono text-xs uppercase tracking-widest text-signal">
-                Volunteer position open
-              </p>
-              <h3 className="mt-3 font-display text-2xl font-semibold">
-                Want to help lead the chapter?
-              </h3>
-              <p className="mx-auto mt-2 max-w-md text-paper/60">
-                We&apos;re always looking for committee members and student volunteers. If you
-                care about industrial electronics in Rwanda, there&apos;s a role for you.
-              </p>
-              <a
-                href={volunteerFormUrl}
-                target={volunteerFormUrl.startsWith("http") ? "_blank" : undefined}
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-signal px-7 py-3.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
-              >
-                Volunteer with us →
-              </a>
-            </div>
+            <VolunteerForm />
           </Reveal>
         </div>
       </section>

@@ -1,0 +1,37 @@
+{"kind":"deck","id":"pr/bzmj6e","name":"Deck"}
+{"kind":"layout","layoutId":"b59fe2aa-9d39-4302-93eb-ec7954968b27","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ebe516bf-2d59-48f4-ab90-30532c5c0652","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/nr1wcc","slide":1,"title":"WELCOME TO","textShapes":22}
+{"kind":"shape","id":"sh/orulsbm9","slide":1,"name":"navy-header","bbox":[0,0,1080,250]}
+{"kind":"textbox","id":"sh/2ps3q14j","slide":1,"name":"welcome-eyebrow","text":"WELCOME TO","textPreview":"WELCOME TO","textChars":10,"textLines":1,"bbox":[72,290,936,52]}
+{"kind":"textbox","id":"sh/1oj2hw3y","slide":1,"name":"main-title","text":"IEEE AESS RWANDA","textPreview":"IEEE AESS RWANDA","textChars":16,"textLines":1,"bbox":[72,342,936,112]}
+{"kind":"shape","id":"sh/gnalormd","slide":1,"name":"title-rule","bbox":[72,472,120,8]}
+{"kind":"textbox","id":"sh/fm1kfmls","slide":1,"name":"intro","text":"A community for people shaping aerospace and electronic systems in Rwanda.","textPreview":"A community for people shaping aerospace and electronic systems in Rwanda.","textChars":74,"textLines":1,"bbox":[72,508,900,86]}
+{"kind":"textbox","id":"sh/els3mh47","slide":1,"name":"benefit-heading","text":"WHAT YOU GAIN WHEN YOU CONNECT","textPreview":"WHAT YOU GAIN WHEN YOU CONNECT","textChars":30,"textLines":1,"bbox":[72,635,936,48]}
+{"kind":"shape","id":"sh/tkj2dc3m","slide":1,"name":"benefit-01-number","bbox":[72,710,58,58]}
+{"kind":"textbox","id":"sh/sjqlkrm1","slide":1,"name":"benefit-01-number-text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,710,58,58]}
+{"kind":"textbox","id":"sh/q90zaxon","slide":1,"name":"benefit-01-heading","text":"Professional connections","textPreview":"Professional connections","textChars":24,"textLines":1,"bbox":[154,706,770,34]}
+{"kind":"textbox","id":"sh/ra903258","slide":1,"name":"benefit-01-body","text":"Meet engineers, researchers, students and industry leaders.","textPreview":"Meet engineers, researchers, students and industry leaders.","textChars":59,"textLines":1,"bbox":[154,740,800,50]}
+{"kind":"shape","id":"sh/cbihc76t","slide":1,"name":"benefit-02-number","bbox":[72,814,58,58]}
+{"kind":"textbox","id":"sh/dcri5cne","slide":1,"name":"benefit-02-number-text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[72,814,58,58]}
+{"kind":"textbox","id":"sh/ilgz6dor","slide":1,"name":"benefit-02-heading","text":"Practical learning","textPreview":"Practical learning","textChars":18,"textLines":1,"bbox":[154,810,770,34]}
+{"kind":"textbox","id":"sh/3mp0zi5c","slide":1,"name":"benefit-02-body","text":"Take part in technical talks, workshops and industry visits.","textPreview":"Take part in technical talks, workshops and industry visits.","textChars":60,"textLines":1,"bbox":[154,844,800,50]}
+{"kind":"shape","id":"sh/4nih8n6x","slide":1,"name":"benefit-03-number","bbox":[72,918,58,58]}
+{"kind":"textbox","id":"sh/58ri1sn2","slide":1,"name":"benefit-03-number-text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[72,918,58,58]}
+{"kind":"textbox","id":"sh/uhgz2dof","slide":1,"name":"benefit-03-heading","text":"Career growth","textPreview":"Career growth","textChars":13,"textLines":1,"bbox":[154,914,770,34]}
+{"kind":"textbox","id":"sh/vipgvi50","slide":1,"name":"benefit-03-body","text":"Find mentorship, leadership and professional development opportunities.","textPreview":"Find mentorship, leadership and professional development opportunities.","textChars":71,"textLines":1,"bbox":[154,948,800,50]}
+{"kind":"shape","id":"sh/za1onahg","slide":1,"name":"benefit-04-number","bbox":[72,1022,58,58]}
+{"kind":"textbox","id":"sh/y9snep0b","slide":1,"name":"benefit-04-number-text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[72,1022,58,58]}
+{"kind":"textbox","id":"sh/lc36pkzm","slide":1,"name":"benefit-04-heading","text":"Research and innovation","textPreview":"Research and innovation","textChars":23,"textLines":1,"bbox":[154,1018,770,34]}
+{"kind":"textbox","id":"sh/kbu5gfi1","slide":1,"name":"benefit-04-body","text":"Collaborate on ideas and projects with real-world impact.","textPreview":"Collaborate on ideas and projects with real-world impact.","textChars":57,"textLines":1,"bbox":[154,1052,800,50]}
+{"kind":"shape","id":"sh/7eloruhs","slide":1,"name":"benefit-05-number","bbox":[72,1126,58,58]}
+{"kind":"textbox","id":"sh/mdcnip07","slide":1,"name":"benefit-05-number-text","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[72,1126,58,58]}
+{"kind":"textbox","id":"sh/9g36t4zy","slide":1,"name":"benefit-05-heading","text":"A global community","textPreview":"A global community","textChars":18,"textLines":1,"bbox":[154,1122,770,34]}
+{"kind":"textbox","id":"sh/8fu5kzid","slide":1,"name":"benefit-05-body","text":"Connect with the wider IEEE AESS network and its resources.","textPreview":"Connect with the wider IEEE AESS network and its resources.","textChars":59,"textLines":1,"bbox":[154,1156,800,50]}
+{"kind":"shape","id":"sh/nih4fqho","slide":1,"name":"cta-band","bbox":[0,1246,1080,374]}
+{"kind":"textbox","id":"sh/2h8n6l03","slide":1,"name":"cta-heading","text":"JOIN THE COMMUNITY","textPreview":"JOIN THE COMMUNITY","textChars":18,"textLines":1,"bbox":[72,1292,550,48]}
+{"kind":"textbox","id":"sh/sn6lgryl","slide":1,"name":"cta-copy","text":"Connect. Learn. Innovate. Lead.\nScan the code or visit the website.","textPreview":"Connect. Learn. Innovate. Lead. | Scan the code or visit the website.","textChars":67,"textLines":2,"bbox":[72,1350,520,100]}
+{"kind":"textbox","id":"sh/dof2pwf6","slide":1,"name":"website","text":"aess.ieeerwanda.org","textPreview":"aess.ieeerwanda.org","textChars":19,"textLines":1,"bbox":[72,1480,520,48]}
+{"kind":"image","id":"im/y9cvat0n","slide":1,"name":"","alt":"IEEE Aerospace and Electronic Systems Society logo","bbox":[165,36,750,175]}
+{"kind":"image","id":"im/xc7mhkn6","slide":1,"name":"","alt":"QR code linking to aess.ieeerwanda.org","bbox":[706,1290,250,250]}
+{"kind":"notes","id":"nt/nr1wcc","slide":1,"text":""}
