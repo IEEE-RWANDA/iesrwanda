@@ -5,11 +5,13 @@ export function EventMedia({
   agenda,
   variant,
   kind,
+  compact = false,
 }: {
   image?: string;
   agenda?: string;
   variant: "poster" | "photo";
   kind: string;
+  compact?: boolean;
 }) {
   const hasAgenda = variant === "poster" && Boolean(image && agenda);
 
@@ -23,7 +25,11 @@ export function EventMedia({
   }
 
   return (
-    <div className="relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-ieee/10 via-ink-soft to-signal/10 md:aspect-auto md:h-full md:min-h-[300px]">
+    <div
+      className={`relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br from-ieee/10 via-ink-soft to-signal/10 ${
+        compact ? "" : "md:aspect-auto md:h-full md:min-h-[300px]"
+      }`}
+    >
       {image ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img

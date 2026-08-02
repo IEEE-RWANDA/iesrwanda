@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { chapter } from "@/lib/site";
+import { useRef, useState } from "react";
 
 const roles = [
   {
@@ -24,30 +23,30 @@ const roles = [
 
 export function VolunteerForm() {
   const [role, setRole] = useState(roles[0].title);
+  const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [feedback, setFeedback] = useState("");
+  const formRef = useRef<HTMLFormElement>(null);
 
-  function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setState("sending");
+    setFeedback("");
     const data = new FormData(event.currentTarget);
-    const name = String(data.get("name") || "");
-    const email = String(data.get("email") || "");
-    const phone = String(data.get("phone") || "");
-    const school = String(data.get("school") || "");
-    const message = String(data.get("message") || "");
-    const subject = encodeURIComponent(`[IES Rwanda Volunteer] ${role} — ${name}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Phone / WhatsApp: ${phone || "Not provided"}`,
-        `School / Organisation: ${school || "Not provided"}`,
-        `Role: ${role}`,
-        "",
-        "Why I would like to volunteer:",
-        message,
-      ].join("\n")
-    );
+    data.set("volunteerRole", role);
 
-    window.location.href = `mailto:${chapter.email}?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch("/api/volunteer-inquiry", { method: "POST", body: data });
+      const result = (await response.json()) as { message?: string };
+      if (!response.ok) throw new Error(result.message || "The application could not be sent.");
+
+      setState("sent");
+      setFeedback("Thank you. Your volunteer application has been sent to the chapter team.");
+      formRef.current?.reset();
+      setRole(roles[0].title);
+    } catch (error) {
+      setState("error");
+      setFeedback(error instanceof Error ? error.message : "The application could not be sent.");
+    }
   }
 
   const field =
@@ -89,7 +88,7 @@ export function VolunteerForm() {
         </div>
       </div>
 
-      <form onSubmit={onSubmit} className="space-y-5 p-7 sm:p-8">
+      <form ref={formRef} onSubmit={onSubmit} className="space-y-5 p-7 sm:p-8">
         <div className="grid gap-5 sm:grid-cols-2">
           <Field label="Name">
             <input name="name" required placeholder="Your full name" className={field} />
@@ -127,14 +126,26 @@ export function VolunteerForm() {
 
         <button
           type="submit"
-          className="inline-flex items-center gap-2 rounded-full bg-signal px-7 py-3.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white"
+          disabled={state === "sending"}
+          className="inline-flex items-center gap-2 rounded-full bg-signal px-7 py-3.5 text-sm font-semibold text-coal transition-colors hover:bg-ieee hover:text-white disabled:cursor-wait disabled:opacity-60"
         >
-          Prepare application email →
+          {state === "sending" ? "Sending…" : "Send volunteer application →"}
         </button>
         <p className="font-mono text-[11px] text-paper/40">
-          Opens your email app with the application addressed to {chapter.email}. Review it,
-          then press Send.
+          Sent securely to info@iesrwanda.org. The chapter team will reply to your email address.
         </p>
+        {feedback && (
+          <p
+            role="status"
+            className={`rounded-xl border px-4 py-3 text-sm ${
+              state === "sent"
+                ? "border-leaf/40 bg-leaf/10 text-leaf"
+                : "border-red-400/40 bg-red-400/10 text-red-300"
+            }`}
+          >
+            {feedback}
+          </p>
+        )}
       </form>
     </div>
   );

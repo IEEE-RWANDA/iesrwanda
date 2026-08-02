@@ -4,6 +4,7 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/Reveal";
 import { SectionLabel } from "@/components/SectionLabel";
 import { CTA } from "@/components/CTA";
 import { EventMedia } from "@/components/EventMedia";
+import { ArchiveEvents } from "@/components/ArchiveEvents";
 import { events } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -42,18 +43,7 @@ export default function EventsPage() {
           </div>
 
           {/* past */}
-          <Reveal className="mb-10 mt-20">
-            <SectionLabel index="05">Archive</SectionLabel>
-          </Reveal>
-          <div className="relative border-l border-paper/15 pl-6 sm:pl-10">
-            <RevealGroup className="space-y-5">
-              {past.map((e) => (
-                <RevealItem key={e.title}>
-                  <Timeline event={e} />
-                </RevealItem>
-              ))}
-            </RevealGroup>
-          </div>
+          <ArchiveEvents events={past} />
         </div>
       </section>
 
