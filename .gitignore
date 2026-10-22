@@ -35,3 +35,8 @@ yarn-error.log*
 
 # generated / scratch output (flyers, agendas, personal docs) — kept locally
 output/
+
+# Local working materials and generated artifacts
+/LinkedIn Photos HQ/
+/outputs/
+/tmp/
