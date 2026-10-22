@@ -11,7 +11,7 @@ export function SectionLabel({
   const color = tone === "signal" ? "text-signal" : "text-ieee";
   return (
     <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.28em]">
-      <span className={color}>[{index}]</span>
+      <span className={`h-1.5 w-1.5 bg-current ${color}`} aria-hidden="true" />
       <span className="text-paper/60">{children}</span>
     </div>
   );

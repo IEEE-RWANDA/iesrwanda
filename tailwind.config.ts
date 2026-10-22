@@ -12,14 +12,14 @@ const config: Config = {
         // NOTE: light theme — `ink`/`ink-soft` are the (light) surfaces and
         // `paper`/`paper-dim` are the (dark) text. Names kept to avoid churn.
         ink: "#FFFFFF", // page background — IES body { background:#fff }
-        "ink-soft": "#F5F5F5", // alternating section — IES #f5f5f5
-        paper: "#333333", // primary text — IES body { color:#333 }
+        "ink-soft": "#F3F6F8", // alternating section — IES #f5f5f5
+        paper: "#203746", // primary text — IES body { color:#333 }
         "paper-dim": "#777777", // muted text — IES #777
         coal: "#1A1A1A", // near-black, for text on accent fills
         // IES brand palette, exact hexes
         ieee: "#006699", // IES blue
         "ieee-deep": "#004263", // IES deep navy
-        signal: "#EC8C00", // IES orange accent
+        signal: "#AD5900", // IES orange accent
         "signal-soft": "#F2A33C",
         // Rwandan flag accents — used sparingly, as punctuation
         sun: "#FAD201",
